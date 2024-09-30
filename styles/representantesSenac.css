@@ -1,0 +1,586 @@
+.admsSenac{
+    position: relative; 
+    min-height: 100dvh;
+    padding: 50PX;
+    background-color: var(--grey1);
+}
+.card1Adm{
+
+    display: flex;
+    margin-top: 10%;
+
+}
+.card2Adm{
+    justify-content: end;
+    display: flex;
+    margin-top: -5%;
+
+}
+.areaIconCardAdm{
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    
+}
+.imgIconAdm{
+     
+    height: 350px;
+    width: 350px;  
+    overflow: hidden;
+    object-fit: cover; 
+    border-radius: 70% 55% 70% 50% ;
+    position: relative;
+}
+.bubbleCardAdm1{
+ 
+    height: 370px;
+    width: 390px;  
+    overflow: hidden; 
+    border-radius: 80% 90% 70% 80% ;
+    background-color: white;
+    position: absolute;
+}
+.bubbleCardAdm2{
+    rotate: 0deg;
+    height: 370px;
+    width: 390px;  
+    overflow: hidden; 
+    border-radius: 50% 70% 50% 90%;
+    border:2px solid white;
+    position: absolute;
+
+}
+.imgIconAdm img{
+    top: 20px;  
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.areaTextCardAdm{
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px; 
+    position: relative;
+    
+    
+}
+.areaTextCardAdm h2{
+
+    min-width: 150px;
+
+}
+.areaTextCardAdm .titleCard{
+    font-size: 150px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.areaTextCardAdm .marcaDagua{
+    font-size: 150px;
+    left: 5%;
+    top: -25%;
+    color: transparent;  
+    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.164);  
+    text-shadow: none;  
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;  
+}
+.bubblebgAdms{
+    background-image: linear-gradient(45deg,var(--orange1),var(--yellow1));    
+    
+    position: absolute;
+    transition: 0.5s;
+    animation: bubbleAnimation 20s ease-in infinite alternate-reverse;
+     
+}
+
+.alotofBubbles{
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--grey1);
+    
+}
+
+
+.bubblebgAdms1{ 
+    height: 350px;
+    width: 350px;
+    left: 10%;
+    border-radius: 90% 80% 80% 70% ; 
+    
+    animation-delay: 0.2s;
+}
+.bubblebgAdms2{ 
+    height: 350px;
+    width: 350px;
+    left: -10%;
+    top: 20%;
+    border-radius: 40% 60% 80% 60% ;
+    animation-delay: 0.3s; 
+}
+.bubblebgAdms3{ 
+    height: 350px;
+    width: 400px;
+    top: 28%;
+    left: 10%;
+    border-radius: 70% 60% 80% 70% ; 
+    rotate: 30deg;
+    animation-delay: 0.4s;
+}
+.bubblebgAdms4{ 
+    height: 150px;
+    width: 150px;
+    right: 5%;
+    bottom: 12%;
+    border-radius: 90% 80% 80% 70% ; 
+    animation-delay: 0.1s;
+}
+.bubblebgAdms5{ 
+    height: 450px;
+    width: 370px;
+    right: -5%;
+    bottom: 32%;
+    border-radius: 60% 70% 60% 90% ;
+    rotate: 350deg; 
+    animation-delay: 0.7s;
+}
+.bubblebgAdms6{ 
+    height: 300px;
+    width: 300px;
+    right: 0;
+    top: 20%;
+    border-radius: 90% 80% 80% 70% ; 
+    animation-delay: 5s;
+}
+.bubblebgAdms7{ 
+    height: 400px;
+    width: 400px;
+    right: 5%;
+    bottom: 20%;
+    border-radius: 90% 80% 80% 70% ; 
+    animation-delay: 3s;
+}
+.bubblebgAdms8{ 
+    height: 120px;
+    width: 150px;
+    rotate: 100deg;
+    left: 0%;
+    top: 5%;
+    opacity: 0.5;
+    border-radius: 70% 85% 60% 80% ; 
+    animation-delay: 2s;
+}
+.bubblebgAdms9{ 
+    height: 170px;
+    width: 180px;
+    left: 16%;
+    bottom: 14%;
+    border-radius: 65% 100% 60% 100% ; 
+    animation-delay: 0.2s;
+}
+.bubblebgAdms10{ 
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    border-radius: 90% 80% 80% 70% ;  
+    animation-delay: 0.2s;
+}
+
+.card2Adm .areaTextCardAdm{
+    
+    text-align: end;
+    right: 10%;
+}
+.card2Adm .areaTextCardAdm .marcaDagua{
+    right: 10%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+#textoSloganSenacHub{
+     
+    margin-top: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#textoSloganSenacHub h1{
+
+    font-size: 50px;    
+    text-align: center;
+    width: 90%;
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--yellow1);
+}
+
+#textoSloganSenacHub p{
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    width: 70%;
+    color: var(--orange1);
+    font-size: 30px;  
+    margin-top: 20px;
+}
+.marcaDaguaSpan{
+    font-size: 80px;
+    left: 15%;
+    top: 5%;
+   
+    color: transparent;  
+    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.164);  
+    text-shadow: none;  
+    position: relative;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.palavras-flutuantes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 35vh;
+}
+
+.palavra1{
+    margin-right: -70%;
+    top: -30%;
+}
+.palavra2{
+    margin: auto;
+    top: -55%;
+}
+.palavra3{
+    margin-left: -60%;
+    top: -60%;
+}
+.palavra4{
+    margin-left: -100%;
+    top: -80%;
+}
+.palavra5{
+    margin-right: -60%;
+    top: -320%;
+}
+.palavra6{
+   
+    top: -150%;
+}
+.palavra7{
+    margin-left: -15%;
+    top: -150%;
+}
+.palavra8{
+    margin-left: -65%;
+    top: -180%;
+}
+.palavra9{
+    margin-left: -65%;
+    top: -180%;
+}
+.palavra10{
+    margin-left: -65%;
+    top: -180%;
+}
+
+.area-frase{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.area-frase h5 {
+
+    
+    text-shadow: 1px 1px 0px #FF6201, 8px 8px 2px #F29D35;
+    font-size:100px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+/* @media screen and (min-width:1250px) {
+   
+    .palavra1{
+        margin-right: -70%;
+        top: -30%;
+   
+    }
+    .palavra2{
+        margin: auto;
+        top: -55%;
+    }
+    .palavra3{
+        margin-left: -60%;
+        top: -60%;
+    }
+    .palavra4{
+        margin-left: -100%;
+        top: -80%;
+    }
+    .palavra5{
+        margin-right: -40%;
+        top: -20%;
+    }
+    .palavra6{
+       
+        top: -150%;
+    }
+    .palavra7{
+        margin-left: -15%;
+        top: -150%;
+    }
+    .palavra8{
+        margin-left: -65%;
+        top: -180%;
+    }
+    .palavra9{
+        margin-left: -65%;
+        top: -180%;
+    }
+    .palavra10{
+        margin-left: -65%;
+        top: -80%;
+    }
+} */
+
+@media (max-width:1200px) {
+
+    .areaTextCardAdm .marcaDagua{
+        font-size: 150px;
+        top: 5%;
+    }
+    .areaTextCardAdm .titleCard{
+        font-size: 75px;
+    }
+    .bubbleCardAdm2{
+        width: 270px;
+        height: 300px;
+
+    }
+    .bubbleCardAdm1{
+        width: 260px;
+        height: 290px;
+
+    }
+    .imgIconAdm{
+        width: 250px;
+        height: 275px;
+
+    }
+    .bubblebgAdms7,  .bubblebgAdms2, .bubblebgAdms1 {
+
+        display: none;
+
+    }
+    
+}
+@media screen and (min-width:950px) {
+    .palavra1{
+        margin-right: -45%;
+        top: -40%;
+    }
+    .palavra2{
+        margin: auto;
+        top: -55%;
+    }
+    .palavra3{
+        margin-left: -60%;
+        top: -60%;
+    }
+    .palavra4{
+        margin-left: -100%;
+        top: -80%;
+    }
+    .palavra5{
+        margin-right: -50%;
+        top: -165%;
+    }
+    .palavra6{
+       
+        top: -210%;
+    }
+    .palavra7{
+        margin-left: -5%;
+        top: -350%;
+    }
+    .palavra8{
+        margin-left: -65%;
+        top: -240%;
+    }
+    .palavra9{
+        margin-left: -112%;
+        top: -270%;
+    }
+    .palavra10{
+        margin-left: -75%;
+        top: -450%;
+    }
+}
+@media (max-width:700px) {
+
+    .areaTextCardAdm .marcaDagua{
+        font-size: 100px;
+        top: 5%;
+    }
+    .areaTextCardAdm .titleCard{
+        font-size: 45px;
+    }
+    .bubbleCardAdm2{
+        width: 220px;
+        height: 230px;
+
+    }
+    .bubbleCardAdm1{
+        width: 210px;
+        height: 220px;
+
+    }
+    .imgIconAdm{
+        width: 190px;
+        height: 205px;
+
+    }
+       .bubblebgAdms3{
+        display: none;
+    }
+    .admsSenac{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    .bubblebgAdms5{
+        height: 350px;
+        width: 370px;
+        bottom: 23%;
+    }
+    .bubblebgAdms6{
+        
+        top: 22%;
+        right: unset;
+        
+    }
+    .bubblebgAdms10{
+       display: none;
+    }
+
+    #textoSloganSenacHub h1{
+
+        font-size: 34px;    
+        
+    }
+    
+    #textoSloganSenacHub p{
+        
+        font-size: 22px;  
+    }
+    
+    
+}
+
+@media (max-width:600px) {
+
+    .admsSenac{ 
+        padding: 10px;
+    }
+    /* .card2Adm,.card1Adm{
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+    } */
+    /* .areaTextCardAdm  {
+        padding-left: 10px;
+    }
+    .areaTextCardAdm .marcaDagua {
+        font-size: 60px;
+        top: 10%;
+        left: -15%;
+    }
+    .areaTextCardAdm .titleCard{
+        font-size: 35px;
+    } */
+    .bubblebgAdms5 {
+
+        bottom: 16%;
+        left: 53%;
+        height: 200px;
+        width: 200px;
+
+    }
+    .areaIconCardAdm{
+        transform: scale(0.8);
+    }
+    .card1Adm{
+        /* width: 100%; */
+        height: 100%;
+        margin-top: -60%;
+        margin-left: 0%;
+        /* background-color: blue; */
+    }
+    .card2Adm{
+        margin-top: 30%;
+    }
+    .palavras-flutuantes span{
+        font-size: 36px;
+        height: 170vh;
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+        top:5%;
+        justify-content: center;
+      }
+    .areaTextCardAdm .titleCard{
+        font-size: 50px;
+        
+    }
+    .areaTextCardAdm .marcaDagua{
+            font-size: 50px;
+        left: 15%;
+        top: -35%; 
+    }
+    .palavra4{
+        margin-left: -10%;
+        top: 80%;
+    }
+    .palavra7{
+        margin-right: 60%;
+        top: 0%;
+    }
+    .palavra8{
+        margin-left: -65%;
+        top: 180%;
+    }
+    .area-frase h5{
+        font-size: 70px;
+    }
+
+}

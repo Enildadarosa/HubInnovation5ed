@@ -1,0 +1,228 @@
+.sobreHub{
+    overflow: unset;
+    width: 100%;
+    margin-top: 200px;
+}
+.headerSobreHub{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
+}
+.headerSobreHub h1 {
+
+    
+    text-shadow: 1px 1px 0px #fff, 8px 8px 2px #FF6201;
+    font-size:100px;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.sobreChooses{
+
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.headerSelectAbout{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.itemHeaderAbout{
+
+    width: 30%;
+    height: 70px; 
+    position: relative;
+}
+.itemHeaderAbout.active .oqueeG{ 
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.oqueeG{
+    height: 0px; 
+}
+.itemHeaderAbout.active button{
+
+    border-radius: 30px 30px 0 0;
+
+}
+.itemHeaderAbout button{
+    color: var(--orange1);
+    border-radius: 30px;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+}
+.contentSobre{
+
+    margin-top: 50px;
+    width: 90%;
+    background-color: white;
+    border-radius: 50px;
+    max-width: 1200px;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    padding: 60px 10px;
+    position: relative; 
+    
+    
+}
+.textSobreHub{
+
+    width: 60%; 
+    color: grey;
+}
+.areaEngrenagemAbout .engrenagemAbout{
+ 
+    height: 60%;
+    width: 60%;
+    
+    position: absolute; 
+
+}
+
+
+
+.areaEngrenagemAbout{
+
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    transform: translate(-15%,-5%);
+    background-image: linear-gradient(200deg,var(--orange1),var(--yellow1));    
+
+    border-radius: 70% 50% 80% 50%;
+    overflow: hidden;
+}
+.line_hr_d{
+    margin: 20px 0 20px 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(69, 69, 69, 0.274);
+}
+
+.outLineEng1{
+
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    transform: translate(-15%,-5%);
+ 
+    border-radius: 80% 90% 80% 70%;
+    border: 2px solid white;
+     
+}
+
+.outLineEng2{
+
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    transform: translate(-15%,-5%);
+ 
+    border-radius: 100% 50% 90% 50%;
+    border: 2px solid white;
+     
+}
+ 
+@media (max-width: 1350px) {
+
+    .areaEngrenagemAbout{
+        transform: scale(0.8) translate(-20%,-20%);
+    }
+    .outLineEng1{
+        transform:scale(0.8) translate(-20%,-20%);
+    }
+    .outLineEng2{ 
+        transform:scale(0.8) translate(-20%,-20%);
+    }
+    
+}
+@media (max-width: 1050px) {
+
+    .areaEngrenagemAbout{
+        transform: scale(0.3) translate(-20%,-0%);
+        position: absolute;
+        top: -200px;
+        left: -200px;
+    }
+    .outLineEng1{
+        transform:scale(0.3) translate(-20%,-0%);
+        top: -200px;
+        left: -200px;
+    }
+    .outLineEng2{ 
+        transform:scale(0.3) translate(-20%,-0%);
+        top: -200px;
+        left: -200px;
+    }
+    .textSobreHub{
+        width: 85%;
+    }
+    .headerSobreHub h1{
+        font-size: 70px;
+    }
+    .itemHeaderAbout button{
+
+        font-size: 30px;
+
+    }
+    .galerySenacHub{
+        margin-top: 0px;
+    }
+    
+}
+@media (max-width: 650px) {
+
+    .outLineEng1{
+        left: -230px;
+        display: none;
+    }
+    .outLineEng2{
+        left: -230px;
+        display: none;
+
+    }
+    .areaEngrenagemAbout{
+        display: none;
+        left: -230px;
+    }
+    .itemHeaderAbout button{
+
+        font-size: 20px;
+
+    }
+
+}

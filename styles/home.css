@@ -1,0 +1,526 @@
+#home_section{
+
+    width: 100vh;
+    height: calc(100vh - 0px);
+    min-height: 800px;
+    position: relative;
+    height: 100dvh;
+    background-color: var(--grey1);
+}
+/* .backgroundHomeRounded{
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 75%;
+    background-color: white;
+    transform: translate(-50%,0);
+    width: 90%;
+    border-radius: 0px 0px 200px 200px;
+
+} */
+.homeSectionContent{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%; 
+    position: relative;  
+    flex-wrap: wrap;  
+
+}
+.homeSectionContent .hubSplashBg{
+    
+    padding-left: 55px;
+   width: 40vw; 
+
+}
+.rightContentHome{
+    position: relative;
+    z-index: 2;
+    height: 50%;
+    width: 430px; 
+    text-align: right;
+     
+
+}
+.areaAboutHomeText h1, .areaAboutHomeText h2{
+
+    color: black;
+    font-family: 'Impact'; 
+    font-weight: 900; 
+    text-shadow: 1px 1px 0px #fff, 3px 3px 0px  var(--orange1);  
+}
+.areaAboutHomeText h1{
+
+    font-size: 68px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+.areaAboutHomeText h2{
+
+    font-size: 45px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}.areaAboutHomeText h3{
+
+    color: var(--orange1);
+    font-size: 35px;
+    margin-bottom: 30px;
+
+}
+.areaAboutHomeText a{
+
+    width: 90%;
+    background-color: var(--orange1);
+    height: 78px;
+    margin-top: 25px;
+    color: white;
+    border-radius: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 900;
+
+    padding: 20px; 
+    text-decoration: none;
+}
+
+.areaImgSenacHome{
+
+    height: 35vw;
+    width: 35vw;
+    max-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70% 55% 60% 50% ; 
+    position: absolute;
+    right: 0%;
+    bottom: 10%;
+
+}
+.areaImgSenacHome img{
+    height: 120%;   
+}
+.bubble1{
+
+    position: absolute;
+    right: 0%;
+    bottom: 2%;
+    height: 250px;
+    width: 250px;
+    background-image: linear-gradient(90deg, var(--yellow1), var(--orange1));
+    border-radius: 85% 45% 90% 56%;
+    opacity: 0.5;
+
+}
+.bubble2{
+
+    position: absolute;
+    right: 1%;
+    bottom: 32%;
+    height: 15vw;
+    width: 15vw;
+    max-width: 150px;
+    max-height: 150px;
+    background-image: linear-gradient(90deg, var(--yellow1), var(--orange1));
+    border-radius: 75% 65% 67% 76%;
+    
+}
+.bubble3{
+
+    position: absolute;
+    right: 20%;
+    bottom: 2%;
+    height: 8vw;
+    width: 8vw;
+    max-width: 100px;
+    max-height: 100px;
+    background-image: linear-gradient(90deg, var(--yellow1), var(--orange1));
+    
+    border-radius: 85% 45% 90% 56%; 
+    rotate: 60deg;
+
+}
+.areaHamburguerNavBar{
+    display: none;
+    width: 50px;
+        height: 50px; 
+    margin-left: 20%;
+    flex-direction: column;  
+    cursor: pointer;
+}
+.areaHamburguerNavBar .lineNav{
+
+    width: 100%;
+   
+    height: 18%;
+    background-color: white;
+    border-radius: 12px;
+
+}
+.areaHamburguerNavBar .lineNav:nth-child(n+2){
+margin-top: 9px;
+}
+
+.name2CardAdm{
+
+    padding-right: 5px;
+
+}
+@media (max-width:1000px) {
+    .homeSectionContent{
+        flex-direction: column;
+        flex-wrap: unset;
+    }
+    .homeSectionContent .hubSplashBg{
+        margin-top: 100px;
+        
+    }
+}
+@media (max-width:700px) {
+    .areaAboutHomeText h1{ 
+        font-size: 45px; 
+    }
+    .areaAboutHomeText h2{ 
+        font-size: 35px; 
+    }
+    .homeSectionContent .hubSplashBg{
+        width: 350px;
+    }
+    .areaAboutHomeText button{
+
+        font-size: 26px;
+        width: 70%;
+
+    }
+    .rightContentHome {
+
+        text-align: center;
+
+    }
+    .areaHamburguerNavBar{
+        display: flex;
+    }
+}
+@media (max-height: 850px) {
+
+    .bubble1{
+        display: none;
+    }
+    .backgroundHomeRounded{
+        min-height: 670px;
+    }
+    
+}
+
+
+/* ideia Enilda */
+
+.home-chamada{
+    min-height: (100vh - 90px);
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    align-items: center;
+}
+.imagem-logo-animacao{
+    position: relative;
+    
+}
+.imagem-logo img{
+    height: 550px;
+    position: relative;
+
+}
+.imagem-logo-hub img{
+    height: 550px;
+}
+
+.areaEngrenagem{
+
+    height: 650px;
+    width: 650px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 120px;
+    top:70px;
+    transform: translate(-15%,-5%);
+    background-image: linear-gradient(200deg,var(--orange1),var(--yellow1));    
+    z-index: -1;
+    border-radius: 60% 60% 85% 70%;
+    overflow: hidden;
+    
+   
+}
+.ring {
+    position: relative;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+  }
+  .ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid orange;
+    transition: 0.5s;
+  }
+  .ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+  }
+  .ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+  }
+  .ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+  }
+  .ring:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate2 {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+  .areaTextCardTitulo{
+    
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px; 
+    position: relative;
+    margin-top: 15%;
+    
+}
+
+.areaTextCardTitulo .titleCard{    
+    font-size: 7rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    z-index: 5;
+    
+}
+.areaTextCardTitulo .marcaDagua{
+    font-size: 8rem;
+    left: -3%;
+    top: -15%;   
+    color: transparent;  
+    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.164);  
+    text-shadow: none;  
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;       
+}
+.areaTextCardTitulo .marcaDagua2{
+    font-size: 8rem;
+    left: -3%;
+    top: 40%;   
+    color: transparent;  
+    -webkit-text-stroke: 0.01px rgba(255, 255, 255, 0.164);  
+    text-shadow: none;  
+    position: absolute;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;       
+}
+
+.dados-evento .info-evento{    
+    font-size: 3.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: rgb(255, 255, 255);   
+    padding-left: -7%;
+    
+}
+.dados-evento .data-evento{    
+    font-size: 3.2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #F29D35;  
+    padding-left: -7%;  
+}
+.botao-inscrever{
+    width: 200px;
+    height: 40px;
+    background-color: #fda437;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.botao-inscrever button{
+    color: #fff;
+    font-size: 24px;
+    background-color: transparent;
+    cursor: pointer;    
+}
+/* @media (min-width:1370px){
+    .areaTextCardTitulo .titleCard{    
+        font-size: 10rem;       
+    }
+    .areaTextCardTitulo .marcaDagua{
+        font-size: 12rem;  
+    }
+    .areaTextCardTitulo .marcaDagua2{
+        font-size: 12rem;
+        left: -3%;
+        top: 40%;   
+    }
+    
+    .dados-evento .info-evento{    
+        font-size: 5rem;
+    }
+    .dados-evento .data-evento{    
+        font-size: 4.2rem;
+    }
+    .areaTextCardTitulo{
+        margin-top: 25%;
+    }
+    
+} */
+
+@media screen and (min-width:950px) {
+    .imagem-logo img{
+        height: 450px;
+        position: relative;
+    
+    }
+    .imagem-logo-hub img{
+        height: 450px;
+    }
+    
+    .areaEngrenagem{
+    
+        height: 550px;
+        width: 550px; 
+    }
+    .ring {
+        width: 550px;
+        height: 550px;
+        margin-top: 90px;
+      }
+    .areaTextCardTitulo .titleCard{    
+        font-size: 6rem;       
+    }
+    .areaTextCardTitulo .marcaDagua{
+        font-size: 7rem;  
+    }
+    .areaTextCardTitulo .marcaDagua2{
+        font-size: 7rem;
+        left: -3%;
+        top: 35%;   
+    }
+    
+    .dados-evento .info-evento{    
+        font-size: 3.5rem;
+    }
+    .dados-evento .data-evento{    
+        font-size: 3rem;
+    }
+    .areaTextCardTitulo{
+        margin-top: 25%;
+    }
+}
+@media screen and (min-width:740px) and (max-width:1010px) {
+    .home-chamada{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:720px) {
+    .home-chamada{
+        flex-direction: column;
+    }   
+    .areaTextCardTitulo .titleCard{    
+        font-size: 5rem;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        z-index: 5;
+        
+    }
+    .areaTextCardTitulo .marcaDagua{
+        font-size: 6rem;
+        left: 5%;       
+    }
+    .areaTextCardTitulo .marcaDagua2{
+        font-size: 6rem;
+        left: 5%;       
+    }
+    
+    .dados-evento .info-evento{    
+        font-size: 2.5rem;
+        padding-left: 7%;   
+    }
+    .dados-evento .data-evento{    
+        font-size: 2rem;  
+        padding-left: 7%; 
+        padding-bottom: 10%; 
+    }
+
+    .imagem-logo img{
+        height: 280px;
+        position: relative;
+    
+    }
+    .imagem-logo-hub img{
+        height: 100%;
+    }
+    
+    .areaEngrenagem{
+    
+        height: 350px;
+        width: 350px;
+    }
+    .ring {
+        position: relative;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+      }
+      .palavras-flutuantes{
+        display: flex;
+        flex-direction: column;
+      }
+      
+}

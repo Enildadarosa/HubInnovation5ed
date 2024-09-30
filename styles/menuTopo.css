@@ -1,0 +1,150 @@
+*{
+
+    border: 0;
+    padding: 0; 
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.menu_topo{
+    position: fixed;
+    z-index:999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 2px 5px 21px 2px rgba(0, 0, 0, 0.26);
+    background-color: white;
+}
+.area_logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding-left: 15px;
+}
+.img_logo{
+
+    height: 80%; 
+
+}
+.links_topo{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 15px;  
+    list-style: none;
+}
+.itemsTopo a{ 
+    text-decoration: none;
+    color: black;
+    font-size: 24px; 
+}
+.yParte{
+    overflow: hidden;
+    height: 100%;
+    width: 20%;
+    background-color: #F29D35;
+    display: flex; 
+    justify-content: start;
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.yParte.active{
+    
+    height: 200px;
+    align-items: start;
+    
+}
+.yParte img {
+    padding-left: 10px;
+    height: 80%;
+    width: 90px;
+    margin-top: 5px;
+}
+
+
+.itemsTopoResponsive a{
+
+    padding-left: 23px;
+
+}
+.yParte.active .responsiveNavBar{
+    display: block;
+    margin-top: 20px;
+    opacity: 1;
+}
+.responsiveNavBar {
+    transition: .5s;
+    transition-delay: 20s; 
+    opacity: 0;
+    position: absolute; 
+    width: 100%; 
+    right: 0; 
+    top: 60px;
+    list-style: none; 
+    transition-delay: 0.5s;     
+   
+}
+
+.responsiveNavBar li{
+
+    opacity: 0;
+    transition: .4s;
+    transition-delay: 0;
+
+}
+.yParte.active  .responsiveNavBar li{
+    opacity: 1;
+}
+.areaHamburguerNavBar{
+
+    position: relative;
+    z-index: 2;  
+    margin-top: 15px;
+}
+.itemsTopoResponsive a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+@media (max-width: 700px) {
+    
+    .img_logo{
+        width: 150px;
+    }
+    .links_topo{
+        
+        display: none
+        
+    }
+    .img_yParte{
+        display: none;
+        
+    }
+    .yParte{
+
+        width: 30%;
+
+    }
+    
+}
+@media (min-width: 700px) {
+
+    .yParte.active {
+        height: 100%; 
+    }
+    .yParte.active .responsiveNavBar{
+        
+
+        display: none;
+
+    }
+
+
+}
