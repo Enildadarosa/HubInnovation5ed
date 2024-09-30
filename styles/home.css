@@ -224,7 +224,7 @@ margin-top: 9px;
 /* ideia Enilda */
 
 .home-chamada{
-    min-height: (100vh - 90px);
+    min-height: (100vh - 100px);
     display: flex;
     justify-content: space-around;
     position: relative;
@@ -523,4 +523,48 @@ a{
         flex-direction: column;
       }
       
+}
+@media screen and (min-width:1400px){
+    .home-chamada{
+        min-height: 100vh;
+    } 
+    .imagem-logo img{
+        height: 550px;
+        position: relative;
+    
+    }
+    .imagem-logo-hub img{
+        height: 550px;
+    }
+    
+    .areaEngrenagem{
+        height: 650px;
+        width: 650px; 
+    }
+    .ring {
+        width: 700px;
+        height: 700px;
+        margin-top: 90px;
+      }
+      .areaTextCardTitulo .titleCard{    
+        font-size: 10rem;       
+    }
+    .areaTextCardTitulo .marcaDagua{
+        font-size: 12rem;  
+    }
+    .areaTextCardTitulo .marcaDagua2{
+        font-size: 12rem;
+        left: -3%;
+        top: 35%;   
+    }
+    
+    .dados-evento .info-evento{    
+        font-size: 4.5rem;
+    }
+    .dados-evento .data-evento{    
+        font-size: 4rem;
+    }
+    .areaTextCardTitulo{
+        margin-top: 25%;
+    }
 }

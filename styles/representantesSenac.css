@@ -280,7 +280,7 @@
 }
 .palavra5{
     margin-right: -60%;
-    top: -320%;
+    top: -120%;
 }
 .palavra6{
    
@@ -402,7 +402,55 @@
     }
     
 }
-@media screen and (min-width:950px) {
+@media screen and (min-width:1400px){
+    .palavras-flutuantes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 40vh;
+    }
+    .palavra1{
+        margin-right: -45%;
+        top: -40%;
+    }
+    .palavra2{
+        top: -45%;
+    }
+    .palavra3{
+        margin-left: 60%;
+        top: -60%;
+    }
+    .palavra4{
+        margin-left: 50%;
+        top: -50%;
+    }
+    .palavra5{
+        margin-right: 70%;
+        top: -50%;
+    }
+    .palavra6{
+     
+        top: -110%;
+    }
+    .palavra7{
+        margin-left: -55%;
+        top: -150%;
+    }
+    .palavra8{
+        margin-left: -30%;
+        top: -155%;
+    }
+    .palavra9{
+        margin-left: -105%;
+        top: -180%;
+    }
+    .palavra10{
+        margin-left: -98%;
+        top: -250%;
+    }
+}
+@media screen and (min-width:950px) and (max-width:1370px) {
     .palavra1{
         margin-right: -45%;
         top: -40%;
