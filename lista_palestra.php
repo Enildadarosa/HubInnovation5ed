@@ -16,10 +16,13 @@ include __DIR__.'/vendor/autoload.php';
 use App\Entity\Palestra;
 use \App\Session\Login;
 //força login do usuário
-Login::requireLogin();
+//Login::requireLogin();
 
 $obj = new Palestra();
 $palestras = $obj->listar();
+
+echo "<pre>"; print_r($palestras); echo "</pre>";
+
 
 include __DIR__.'/includes/header.php';
 include __DIR__.'/includes/menu_user.php';
