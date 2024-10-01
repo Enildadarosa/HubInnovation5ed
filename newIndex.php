@@ -10,53 +10,42 @@ $palestras = $new_obj->filtrar();
 $results = '';
 foreach ($palestras as $palestra) {
   $contVagas = $palestra->vagas;
-  if ($contVagas <= 0) {
+  if ($contVagas <= 0) { //BLOQUEAR VAGAS
     $results .= '		
-            <div class="card-container move" animation="top" href="inscricao.html"> 
-             
-            <div class="card" onclick="seeCardDescription(this)">
-              <div class="imgs_palestrante" data-carousel=0>
-                <img class="palestrante" src="' . $palestra->foto . '" alt="">
-              </div> 
-              <div class="front-content">
-                <p class="nome-palestrante">' . $palestra->nome_palestrante . '</p>
-              </div>
-              <div class="content">
-                <h1> ENCERRADAS </h1> 
-                <div class="area_icons">
-                  <a href="'.$palestra->instagram.'" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-instagram"></i></a> 
-                  <a href="'.$palestra->linkedin.'" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin"></i></a> 
+              <div class="card_palestra palestra_item" palestra_id="28">
+                    <div class="front_card_palestra">
+                        <img class="img_card_palestra"
+                            src="./images/Thiago.jfif"
+                            alt="">
+                    </div>
+                    <div class="back_card_palestra">
+                        <div class="bubbleCardPalestra"></div>
+                    </div>
+                    <div class="about_palestra_card">
+                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
+                        <h2>Thiago Almeida</h2>
+                        <h3>20 VAGAS</h3>
+                    </div>
                 </div>
-                <p class="titulo-palestra"> ' . $palestra->palestra . '</p>
-                <p class="titulo-palestra2"></p>
-              </div>
-            </div>
-          </div> 
           ';
   } else {
     $results .= '
-          <div class="card-container move" animation="top" href="inscricao.html"> 
-            
-            <div class="card" onclick="seeCardDescription(this)">
-              <div class="imgs_palestrante" data-carousel=0>
-                <img class="palestrante" src="' . $palestra->foto . '" alt="">
-              </div> 
-              <div class="front-content">
-                <p class="nome-palestrante">' . $palestra->nome_palestrante . '</p>
-              </div>
-              <div class="content">
-                <h1> ' . $palestra->vagas . ' VAGAS</h1>
-                <div class="area_icons">
-                  <a href="'.$palestra->instagram.'" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-instagram"></i></a> 
-                  <a href="'.$palestra->linkedin.'" target="_blank" rel="noopener noreferrer"> <i class="fa-brands fa-linkedin"></i></a> 
+                <div class="card_palestra palestra_item" palestra_id="28">
+                    <div class="front_card_palestra">
+                        <img class="img_card_palestra"
+                            src="'.$palestra->foto.'"
+                            alt="">
+                    </div>
+                    <div class="back_card_palestra">
+                        <div class="bubbleCardPalestra"></div>
+                    </div>
+                    <div class="about_palestra_card">
+                        <input type="hidden" id="id_palestra" name="id_palestra" value="'.$palestra->id_palestra .'" />
+                        <h1> '.$palestra->palestra.' </h1>
+                        <h2>'.$palestra->nome_palestrante.'</h2>
+                        <h3>'.$palestra->vagas.' VAGAS</h3>
+                    </div>
                 </div>
-                <p class="titulo-palestra"> ' . $palestra->palestra . '</p>
-                <p class="titulo-palestra2"></p>
-                <a href="./inscricao.php?id_palestra=' . $palestra->id_palestra . '" class="ver_palestra clicavel"><span class="span_btn_inscricao">Ver <i class="fa-solid fa-arrow-right "></i></span> </a>
-              </div>
-            </div>
-          </div>
- 
     ';
   }
 }
@@ -95,7 +84,7 @@ foreach ($palestras as $palestra) {
     <nav class="menu_topo">
 
         <div class="area_logo">
-            <img class="img_logo" src="./SVG SITE HUB 5/Logo e Elementos/SVG/AtivoYW.svg">
+            <img class="img_logo" src="./svgs/AtivoYW.svg">
         </div>
         <ul class="links_topo">
             <li class="itemsTopo"><a href="#home_section">Home</a></li>
@@ -104,7 +93,7 @@ foreach ($palestras as $palestra) {
         </ul>
         <div class="yParte" id="yParte">
 
-            <img class="img_yParte" src="./SVG SITE HUB 5/Logo e Elementos/SVG/whiteSquare.svg" alt="">
+            <img class="img_yParte" src="./svgs/whiteSquare.svg" alt="">
             <div class="areaHamburguerNavBar" id="buttonAreaHamburguerNavBar">
 
                 <div class="lineNav lineNav1"></div>
@@ -267,74 +256,7 @@ foreach ($palestras as $palestra) {
         <div class="areaCardsPalestras">
 
             <div class="content_cardsPalestras">
-                <div class="card_palestra palestra_item" palestra_id="28">
-                    <div class="front_card_palestra">
-                        <img class="img_card_palestra"
-                            src="./images/Thiago.jfif"
-                            alt="">
-                    </div>
-                    <div class="back_card_palestra">
-                        <div class="bubbleCardPalestra"></div>
-                    </div>
-                    <div class="about_palestra_card">
-                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                        <h2>Thiago Almeida</h2>
-                        <h3>20 VAGAS</h3>
-                    </div>
-                </div>
-                <div class="card_palestra palestra_item" palestra_id="22">
-                    <div class="front_card_palestra">
-                        <img class="img_card_palestra"
-                            src="./images/Ederson.jfif"
-                            alt="">
-
-                    </div>
-
-                    <div class="back_card_palestra">
-                        <div class="bubbleCardPalestra"></div>
-                    </div>
-
-                    <div class="about_palestra_card">
-                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                        <h2>Ederson Costa</h2>
-                        <h3>20 VAGAS</h3>
-                    </div>
-                </div>
-                <div class="card_palestra palestra_item" palestra_id="13">
-                    <div class="front_card_palestra">
-                        <img class="img_card_palestra"
-                            src="./images/Calebe.jfif"
-                            alt="">
-
-                    </div>
-
-                    <div class="back_card_palestra">
-                        <div class="bubbleCardPalestra"></div>
-                    </div>
-
-                    <div class="about_palestra_card">
-                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                        <h2>Calebe Caleberson</h2>
-                        <h3>20 VAGAS</h3>
-                    </div>
-                </div>
-                <div class="card_palestra palestra_item" palestra_id="11">
-                    <div class="front_card_palestra">
-                        <img class="img_card_palestra"
-                            src="https://delco.today/wp-content/uploads/sites/3/2023/07/iStock-1452604857-970x550.jpg"
-                            alt="">
-                    </div>
-
-                    <div class="back_card_palestra">
-                        <div class="bubbleCardPalestra"></div>
-                    </div>
-
-                    <div class="about_palestra_card">
-                            <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                            <h2>Como captalizar clientes</h2>
-                        <h3>20 VAGAS</h3>
-                    </div>
-                </div>
+                <?=$results?> 
             </div>
         </div>
     </section>
@@ -463,7 +385,7 @@ foreach ($palestras as $palestra) {
                 </div>
                 <div class="areaEngrenagemAbout">
                     <img class="engrenagemAbout move" animation="right"
-                        src="./SVG SITE HUB 5/Logo e Elementos/SVG/whiteSquare.svg" alt="" srcset="">
+                        src="./svgs/whiteSquare.svg" alt="" srcset="">
                 </div>
                 <div class="outLineEng1"></div>
                 <div class="outLineEng2"></div>
@@ -526,20 +448,20 @@ foreach ($palestras as $palestra) {
 
         <div class="areaCardsApoiadores">
             <div class="cardApoiador">
-                <img src="./SVG SITE HUB 5/Logo e Elementos/SVG/wizardIcon.png">
+                <img src="./svgs/wizardIcon.png">
             </div>
             <div class="cardApoiador">
-                <img src="./SVG SITE HUB 5/Logo e Elementos/SVG/wizardIcon.png">
+                <img src="./svgs/wizardIcon.png">
             </div>
             <div class="cardApoiador">
-                <img src="./SVG SITE HUB 5/Logo e Elementos/SVG/wizardIcon.png">
+                <img src="./svgs/wizardIcon.png">
             </div>
             <div class="cardApoiador">
-                <img src="./SVG SITE HUB 5/Logo e Elementos/SVG/wizardIcon.png">
+                <img src="./svgs/wizardIcon.png">
             </div>
 
             <div class="cardApoiador">
-                <img src="./SVG SITE HUB 5/Logo e Elementos/SVG/wizardIcon.png">
+                <img src="./svgs/wizardIcon.png">
             </div>
 
         </div>
