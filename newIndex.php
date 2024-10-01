@@ -12,35 +12,40 @@ foreach ($palestras as $palestra) {
   $contVagas = $palestra->vagas;
   if ($contVagas <= 0) { //BLOQUEAR VAGAS
     $results .= '		
-              <div class="card_palestra palestra_item" palestra_id="28">
+                <div class="card_palestra palestra_item" palestra_id="22">
                     <div class="front_card_palestra">
                         <img class="img_card_palestra"
-                            src="./images/Thiago.jfif"
+                            src="./images/Ederson.jfif"
                             alt="">
+
                     </div>
+
                     <div class="back_card_palestra">
                         <div class="bubbleCardPalestra"></div>
                     </div>
+
                     <div class="about_palestra_card">
                         <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                        <h2>Thiago Almeida</h2>
+                        <h2>Ederson Costa</h2>
                         <h3>20 VAGAS</h3>
                     </div>
                 </div>
           ';
   } else {
     $results .= '
-                <div class="card_palestra palestra_item" palestra_id="28">
+                <div class="card_palestra palestra_item" palestra_id="22">
                     <div class="front_card_palestra">
                         <img class="img_card_palestra"
                             src="'.$palestra->foto.'"
-                            alt="">
+                            alt="Avatar">
+
                     </div>
+
                     <div class="back_card_palestra">
                         <div class="bubbleCardPalestra"></div>
                     </div>
+
                     <div class="about_palestra_card">
-                        <input type="hidden" id="id_palestra" name="id_palestra" value="'.$palestra->id_palestra .'" />
                         <h1> '.$palestra->palestra.' </h1>
                         <h2>'.$palestra->nome_palestrante.'</h2>
                         <h3>'.$palestra->vagas.' VAGAS</h3>
@@ -50,9 +55,9 @@ foreach ($palestras as $palestra) {
   }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -256,7 +261,46 @@ foreach ($palestras as $palestra) {
         <div class="areaCardsPalestras">
 
             <div class="content_cardsPalestras">
-                <?=$results?> 
+
+                <?=$results?>
+               
+                <div class="card_palestra palestra_item" palestra_id="22">
+                    <div class="front_card_palestra">
+                        <img class="img_card_palestra"
+                            src="./images/Ederson.jfif"
+                            alt="">
+
+                    </div>
+
+                    <div class="back_card_palestra">
+                        <div class="bubbleCardPalestra"></div>
+                    </div>
+
+                    <div class="about_palestra_card">
+                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
+                        <h2>Ederson Costa</h2>
+                        <h3>20 VAGAS</h3>
+                    </div>
+                </div>
+                <div class="card_palestra palestra_item" palestra_id="13">
+                    <div class="front_card_palestra">
+                        <img class="img_card_palestra"
+                            src="./images/Calebe.jfif"
+                            alt="">
+
+                    </div>
+
+                    <div class="back_card_palestra">
+                        <div class="bubbleCardPalestra"></div>
+                    </div>
+
+                    <div class="about_palestra_card">
+                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
+                        <h2>Calebe Caleberson</h2>
+                        <h3>20 VAGAS</h3>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -431,8 +475,6 @@ foreach ($palestras as $palestra) {
 
 
     </section>
-
-
     
     <section class="apoiadores">
 

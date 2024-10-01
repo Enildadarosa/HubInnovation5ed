@@ -78,7 +78,7 @@ const abrirModalSubscribe = (data, idPalestra) => {
 
 }
 const setDataModal = (data, idP) => {
-
+    console.log(data)
     const img_card_palestra = document.getElementById("img_card_palestraModal")
     const titleCardPalestraSubscribe = document.getElementById("titleCardPalestraSubscribe")
     const subTitleCardPalestraSubscribe = document.getElementById("subTitleCardPalestraSubscribe")
@@ -99,7 +99,7 @@ const setDataModal = (data, idP) => {
     nomePalestranteSubscribe.innerText = data.palestrante.nome 
     btnToSubscribeModalSimao100.addEventListener('click',(e) => {
 
-        window.location.href = "inscricao.html?id_palestra="+idP
+        window.location.href = "inscricao.php?id_palestra="+idP
 
     })
 
