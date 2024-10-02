@@ -76,6 +76,7 @@ foreach ($palestras as $palestra) {
     <link rel="stylesheet" href="./styles/galerySenac.css">
     <link rel="stylesheet" href="./styles/apoiadores.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <script src="./js/main.js" defer></script>
 </head>
 
 <body>
@@ -83,7 +84,7 @@ foreach ($palestras as $palestra) {
     <nav class="menu_topo">
 
         <div class="area_logo">
-            <img class="img_logo" src="./svgs/AtivoYW.svg">
+            <img class="img_logo" src="./svgs/hublogo5.svg">
         </div>
         <ul class="links_topo">
             <li class="itemsTopo"><a href="#home_section">Home</a></li>
@@ -92,7 +93,7 @@ foreach ($palestras as $palestra) {
         </ul>
         <div class="yParte" id="yParte">
 
-            <img class="img_yParte" src="./svgs/whiteSquare.svg" alt="">
+            <img class="img_yParte" src="./svgs/hubwhite.svg" alt="">
             <div class="areaHamburguerNavBar" id="buttonAreaHamburguerNavBar">
 
                 <div class="lineNav lineNav1"></div>
@@ -111,31 +112,6 @@ foreach ($palestras as $palestra) {
 
     </nav>
 
-    <!-- RESPONSIVIZAR PARA 900px 100% -->
-    <!-- <section id="home_section"> 
-        <div class="backgroundHomeRounded"></div> 
-        <div class="homeSectionContent">
-            <img class="hubSplashBg" src="../images/art backgorund5.png" alt="" srcset="">
-            <div class="rightContentHome">
-                <div class="areaAboutHomeText">
-                    <h1>O MAIOR EVENTO</h1>
-                    <h2>DO SENAC HUB ACADEMY</h2>
-                    <h3>DIA  23/10 ÀS 19:00</h3>
-                    <a href="#palestras">Quero me inscrever!</a>
-                </div>                
-            </div>
-
-
-            <div class="bubble1"></div>
-            <div class="areaImgSenacHome"> 
-                <img src="../images/hubAcademy.jpg" alt="">  
-            </div>
-            <div class="bubble2"></div>
-            <div class="bubble3"></div> 
-        </div> 
-
-    </section>  -->
-
     <section class="home-chamada">
         <div class="imagem-logo-animacao">
             <div class="ring">
@@ -143,14 +119,14 @@ foreach ($palestras as $palestra) {
                 <i style="--clr:#F29D35;"></i>
                 <i style="--clr:#ffdb64;"></i>
                 <div class="imagem-logo">
-                    <img src="./images/Amarelo innovation-01.png" alt="">
+                    <img src="./images/logohub_yellow.png" alt="">
                 </div>
             </div>
             <!-- <div class="areaEngrenagem"></div> -->
         </div>
         <div class="dados-evento">
             <!-- <div class="imagem-logo-hub">
-                <img src="../images/34563463.png" alt="">
+                <img src="./images/34563463.png" alt="">
             </div> -->
             <div class="areaTextCardTitulo">
                 <h1 class="titleCard move" animation="left">HUB </h1>
@@ -187,14 +163,6 @@ foreach ($palestras as $palestra) {
 
         </div>
         <div class="card1Adm">
-            <!-- <div class="areaIconCardAdm">
-                <div class="bubbleCardAdm1"></div>
-                <div class="imgIconAdm">
-                    <img src="../images/vitor-mello.jpg"
-                        alt="" srcset="">
-                </div>
-                <div class="bubbleCardAdm2"></div>
-            </div> -->
             <div class="areaTextCardAdm">
                 <h1 class="titleCard move" animation="left">SENAC MS</h1>
                 <h1 class="marcaDagua move" animation="right">SENAC MS</h1>
@@ -333,10 +301,9 @@ foreach ($palestras as $palestra) {
         </div>
 
         <div class="areaRealizao">
-                <img src="./images/Logo Hub Negativo.png">
-                <img src="./images/logoFecomercionegativo.png" id="fe-com">
-        
-                <img src="./images/Logo Branca Fábrica de Software.png">
+                <img src="./images/logohubneg.png">
+                <img src="./images/logofecoms.png" id="fe-com">
+                <img src="./images/logofabrica.png">
            
         </div>
     </section>
@@ -415,19 +382,21 @@ foreach ($palestras as $palestra) {
 
         <div class="imgsGalery">
             <img class="imgGal imgGal1"
-                src="./images/IMG-20230621-WA0229.jpg">
-            <img class="imgGal imgGal2" src="../images/IMG-20230621-WA0214 .jpg">
+                src="./images/20231025_213213.jpg">
+            <img class="imgGal imgGal2" 
+                src="./images/IMG-20230621-WA0214 .jpg">
             <img class="imgGal imgGal3"
                 src="./images/IMG_20230621_212109_2.jpg">
             <img class="imgGal imgGal4"
                 src="./images/IMG-20230621-WA0296.jpg">
             <img class="imgGal imgGal5"
                 src="./images/IMG-20230622-WA0009.jpg">
-            <img class="imgGal imgGal6" src="../images/IMG-20231025-WA0148.jpg">
+            <img class="imgGal imgGal6" 
+                src="./images/IMG-20231025-WA0148.jpg">
             <img class="imgGal imgGal7"
                 src="./images/IMG-20230622-WA0006.jpg">
             <img class="imgGal imgGal8"
-                src="./images/IMG-20221025-WA0216.jpg">
+                src="./images/IMG-20230621-WA0229.jpg">
         </div>
 
 
@@ -486,7 +455,6 @@ foreach ($palestras as $palestra) {
 
     </footer>
 
-    <script src="./js/main.js" defer></script>
 </body>
 
 </html>
