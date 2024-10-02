@@ -20,10 +20,7 @@ Login::requireLogin();
 
 $obj = new Palestra();
 $palestras = $obj->listar();
-
-echo "<pre>"; print_r($palestras); echo "</pre>";
-
-
+g
 include __DIR__.'/includes/header.php';
 include __DIR__.'/includes/menu_user.php';
 include __DIR__.'/includes/main_lista_palestra.php';
