@@ -26,7 +26,7 @@ class Database{
             $this->conn = new PDO("mysql:host=".$this->local.";dbname=$this->db",$this->user,$this->password); 
             $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 
-            echo "Conectado com Sucesso!!";
+            //echo "Conectado com Sucesso!!";
         } catch (PDOException $err) {
             //retirar msg em produção
             die("Connection Failed " . $err->getMessage());

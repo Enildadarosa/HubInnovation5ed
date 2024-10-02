@@ -19,34 +19,33 @@ if(isset($_GET['id_palestra']))
     $bio = $palestra->bio;
     $insta = $palestra->instagram;
     $linked = $palestra->linkedin;
-    //echo "<pre>"; print_r($new_obj); echo "</pre>";
+    //echo "<pre>"; print_r($palestra); echo "</pre>";
 }else{
     header('location:./index.php');
 }
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hub Innovation 4</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/hub.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/hub.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="src/styles/inscricao.css">
+    <link rel="stylesheet" href="./styles/inscricao.css">
     
-    <script src="node_modules/animejs/lib/anime.min.js"></script>
-    <script defer src="src/javascript/inscricao.js"></script>
-    <script defer src="src/javascript/cursor.js"></script>
+    <script src="../node_modules/animejs/lib/anime.min.js"></script>
+    <script defer src="./js/inscricao.js"></script>
+    <script defer src="./js/cursor.js"></script>
 
      
     <script>
@@ -134,7 +133,7 @@ if(isset($_GET['id_palestra']))
             <div class="left_side">
                 
                 <div class="vagas_title">
-                    <h1><?=$vagas?> Vagas</h1>
+                    <h1><?=$vagas?> vagas</h1>
                 </div>
 
                 <div class="view_ins_pale">
@@ -156,14 +155,14 @@ if(isset($_GET['id_palestra']))
                         <h2 class="move" animation="top">BIO</h2>
                         <div class="tracer"></div>
                     </div>
-                    <p  animation="left" class="desc_about move"> <?=$bio?></p>
+                    <p  animation="left" class="desc_about move"><?=$bio?></p>
                     <div class="title_about">
                         <div class="tracer"></div>
                         <h2 class="move" animation="top">SOBRE</h2>
                         <div class="tracer"></div>
                     </div>
                     <h1 class="move" animation="left"> <?=$titulo?> </h1>
-                    <p  animation="left" class="desc_about move"> <?=$descricao?></p>
+                    <p  animation="left" class="desc_about move"> <?=$descricao?> </p>
                 </div>
             </div>
 
@@ -238,6 +237,7 @@ if(isset($_GET['id_palestra']))
                         <button name="cadastrar" id="btn_cad" class="clicavel"> 
                             Cadastrar
                         </button>
+
                     </div>
                 </form>
             </div>
@@ -246,5 +246,5 @@ if(isset($_GET['id_palestra']))
 
 
 </body>
-<script src="src/javascript/script.js"></script>
+<script src="./js/script.js"></script>
 </html>

@@ -261,12 +261,13 @@ form.addEventListener("submit",async (e) => {
         response: tmp_token
     };
 
-    let data_res = await fetch("action/verify_token_captcha.php",{
+    let data_res = await fetch("./action/verify_token_captcha.php",{
         method:"POST",
         body: new URLSearchParams(data)
     })
 
     let res = await data_res.json()  
+    console.log(res);
     if(res.success == false){
         // ERRO, CAPTCHA INVALIDO
         document.querySelector("#btn_cad").disabled = false;
@@ -278,14 +279,15 @@ form.addEventListener("submit",async (e) => {
   
 
     const formData = new FormData(form); 
+    console.log(formData);
 
-    let data_php = await fetch("action/register_participant.php",{
+    let data_php = await fetch("./action/register_participant.php",{
              method:"POST",
              body: formData
          });
     
     let cad = await data_php.json();
-    
+    console.log(cad);
     if(cad.status == 'success'){ 
         allGreen()
         activeModal("Inscrição Realizada!",true) 

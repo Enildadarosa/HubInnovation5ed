@@ -72,7 +72,7 @@ palestras_cards.forEach(e => {
 const modalSubscribe = document.querySelector('.modalSubscribePalestra')
 
 const abrirModalSubscribe = (data, idPalestra) => {  
-    
+    console.log(data)
     setDataModal(data,idPalestra)  
     modalSubscribe.classList.add("active")
 
@@ -99,7 +99,7 @@ const setDataModal = (data, idP) => {
     nomePalestranteSubscribe.innerText = data.palestrante.nome 
     btnToSubscribeModalSimao100.addEventListener('click',(e) => {
 
-        window.location.href = "inscricao.php?id_palestra="+idP
+        window.location.href = "newinscricao.php?id_palestra="+idP
 
     })
 
