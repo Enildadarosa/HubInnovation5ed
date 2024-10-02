@@ -7,7 +7,7 @@ use App\Entity\Palestrante;
 use App\Entity\Colaborador;
 use \App\Session\Login;
 //força login do usuário
-//Login::requireLogin();
+Login::requireLogin();
 
 $obj = new Colaborador();
 $colaboradores = $obj->buscar();

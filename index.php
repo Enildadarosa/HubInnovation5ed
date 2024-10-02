@@ -1,7 +1,5 @@
 <?php
-
 include __DIR__ . '/vendor/autoload.php';
-
 use App\Entity\Palestra;
 
 $new_obj = new Palestra();
@@ -12,11 +10,11 @@ foreach ($palestras as $palestra) {
   $contVagas = $palestra->vagas;
   if ($contVagas <= 0) { //BLOQUEAR VAGAS
     $results .= '		
-                <div class="card_palestra palestra_item" palestra_id="22">
+                <div class="card_palestra palestra_item" palestra_id="'.$palestra->id_palestra.'">
                     <div class="front_card_palestra">
                         <img class="img_card_palestra"
-                            src="./images/Ederson.jfif"
-                            alt="">
+                            src="'.$palestra->foto.'"
+                            alt="Avatar">
 
                     </div>
 
@@ -25,9 +23,9 @@ foreach ($palestras as $palestra) {
                     </div>
 
                     <div class="about_palestra_card">
-                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                        <h2>Ederson Costa</h2>
-                        <h3>20 VAGAS</h3>
+                        <h1> '.$palestra->palestra.' </h1>
+                        <h2>'.$palestra->nome_palestrante.'</h2>
+                        <h3>ENCERRADAS</h3>
                     </div>
                 </div>
           ';
@@ -62,7 +60,6 @@ foreach ($palestras as $palestra) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HUB INNOVATION 5</title>
-
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
@@ -79,8 +76,6 @@ foreach ($palestras as $palestra) {
     <link rel="stylesheet" href="./styles/galerySenac.css">
     <link rel="stylesheet" href="./styles/apoiadores.css">
     <link rel="stylesheet" href="./styles/footer.css">
-
-
 </head>
 
 <body>
@@ -261,27 +256,7 @@ foreach ($palestras as $palestra) {
 
             <div class="content_cardsPalestras">
 
-                <?=$results?>
-               
-                <div class="card_palestra palestra_item" palestra_id="22">
-                    <div class="front_card_palestra">
-                        <img class="img_card_palestra"
-                            src="./images/Ederson.jfif"
-                            alt="">
-
-                    </div>
-
-                    <div class="back_card_palestra">
-                        <div class="bubbleCardPalestra"></div>
-                    </div>
-
-                    <div class="about_palestra_card">
-                        <h1>A.I. para Vendas A.I. para Vendas A.I. para Vendas</h1>
-                        <h2>Ederson Costa</h2>
-                        <h3>20 VAGAS</h3>
-                    </div>
-                </div>
-                
+                <?=$results?>               
                 
             </div>
         </div>
@@ -511,7 +486,7 @@ foreach ($palestras as $palestra) {
 
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 </body>
 
 </html>
