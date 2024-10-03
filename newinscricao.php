@@ -43,8 +43,9 @@ if(isset($_GET['id_palestra']))
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./styles/inscricao.css">
     
-    <script src="../node_modules/animejs/lib/anime.min.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
     <script defer src="./js/inscricao.js"></script>
+    <script src="./js/script.js" defer></script>
     <script defer src="./js/cursor.js"></script>
 
      
@@ -246,5 +247,5 @@ if(isset($_GET['id_palestra']))
 
 
 </body>
-<script src="./js/script.js"></script>
+
 </html>

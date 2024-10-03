@@ -267,7 +267,7 @@ form.addEventListener("submit",async (e) => {
     })
 
     let res = await data_res.json()  
-    console.log(res);
+
     if(res.success == false){
         // ERRO, CAPTCHA INVALIDO
         document.querySelector("#btn_cad").disabled = false;
@@ -278,8 +278,7 @@ form.addEventListener("submit",async (e) => {
     }
   
 
-    const formData = new FormData(form); 
-    console.log(formData);
+    const formData = new FormData(form);
 
     let data_php = await fetch("./action/register_participant.php",{
              method:"POST",
@@ -289,6 +288,7 @@ form.addEventListener("submit",async (e) => {
     let cad = await data_php.json();
     console.log(cad);
     if(cad.status == 'success'){ 
+        alert("OLA MUNDO")
         allGreen()
         activeModal("Inscrição Realizada!",true) 
         resetCampos()
@@ -302,4 +302,4 @@ form.addEventListener("submit",async (e) => {
 
 })
 
-document.querySelector("#cancel_button").addEventListener("click",() => {window.location.href = "./index.html"})
+document.querySelector("#cancel_button").addEventListener("click",() => {window.location.href = "./index.php"})
