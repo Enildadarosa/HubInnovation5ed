@@ -97,7 +97,7 @@
     display: flex;
     max-width: 1200px;
     flex-wrap: wrap;
-    background-color: #9a9a9a23;
+    background-color: #000000b8;
     backdrop-filter: blur(8px);
     border-radius: 15px;
 }
@@ -108,13 +108,13 @@
 }
 
 .left_side{
-      
+    
     max-height: 800px;
     overflow-y: scroll;
     overflow-x: hidden;
     width: 40%;
     min-width: 300px;
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgb(0 0 0 / 67%);
     
 }
 .vagas_title{
@@ -189,7 +189,7 @@
 .right_side{
     width: 60%;
     height: 800px; 
-     
+    font-family: "Poppins", sans-serif;
     min-width: 650px;
     padding: 20px 50px;
 }
@@ -197,7 +197,7 @@
     height: 100%;
 }
 .title_inscreva{
-    color: #000;
+    color: #fff;
     font-size: 50px;
     letter-spacing: 10px;
     width: 100%;
@@ -219,13 +219,14 @@
     transform: translateY(-10px);
 }
 .input_area .input{
-    border: 2px solid black;
+    border: 2px solid white;
     width: 100%;
     outline: none;
     border-radius: 8px;
     height: 40px;
     padding: 10px;
-    color: black;
+    color: white; 
+
 }
 .area_icons_ins{
     margin-top: 20px;
@@ -239,7 +240,7 @@
 
 .input_label{
     pointer-events: none;
-    color: black;
+    color: white;
     position: relative;
     top: -32px;  
     left: 10px; 
@@ -272,7 +273,7 @@
 }
 .input_area_genero{
     width: 100%;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -282,7 +283,7 @@
 .input_select_gen{
     height: 42px;
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 7px;
 }
 
@@ -298,7 +299,7 @@
     width: 100%;
     margin-top: 10px;
     display: flex;
-    color: var(--color-primary-6);
+    color: white;
     font-weight: 700;
     align-items: center;
     justify-content: start;
@@ -319,12 +320,14 @@
 
 .buttons_content button{
 
-    height: 30px;
+    height: 55px;
+    width: 180px;
+    cursor: pointer;
     background-color: var(--color-primary-1);
     border-radius: 8px;
     padding: 0 25px;
     color: black;
-    box-shadow: 2px 2px 2px 2px #37003f;
+    box-shadow: 2px 2px 2px 2px #c43a08;
     /* cursor: pointer; */
     transition: .3s;
     
@@ -544,6 +547,7 @@ input[type="checkbox"] {
     .ball1{
         right: 25%;
     }
+    
 }
 
 @media (max-width: 1000px) {
@@ -571,6 +575,9 @@ input[type="checkbox"] {
     }
     .area_checkboxes label{
         font-size: 12px;
+    }
+    .buttons_content{
+        transform: translate(0, -40%);
     }
 
 }
@@ -601,4 +608,20 @@ input[type="checkbox"] {
         padding: 0;
     }
    
+}
+
+@media (max-width: 550px) {
+    .buttons_content button {
+        height: 45px;
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 1207px) {
+
+    .buttons_content{
+        transform: unset;
+    }
+
 }

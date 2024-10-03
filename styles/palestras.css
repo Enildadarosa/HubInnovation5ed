@@ -131,6 +131,18 @@
     z-index: 2;
 }
 
+.cardPalestraSubscribe .back_card_palestra{ 
+    height: 325px;
+    width: 264px; 
+}
+.cardPalestraSubscribe .about_palestra_card{ 
+    top: -102px;
+}
+.cardPalestraSubscribe .bubbleCardPalestra{ 
+    bottom: -202px; 
+}
+
+
 .img_card_palestra{
     
     position: absolute;
