@@ -5,6 +5,26 @@ use App\Entity\Palestra;
 $new_obj = new Palestra();
 $palestras = $new_obj->filtrar();
 
+$nocards = '
+                <div class="card_palestra palestra_item">
+                    <div class="front_card_palestra">
+                        <img class="img_card_palestra"
+                            src="./images/IA.jpg"
+                            alt="Avatar">
+                    </div>
+
+                    <div class="back_card_palestra">
+                        <div class="bubbleCardPalestra"></div>
+                    </div>
+
+                    <div class="about_palestra_card">
+                        <h1> Inteligência Artificial </h1>
+                        <h2> Explorando Soluções </h2>
+                        <h3>ENCERRADAS</h3>
+                    </div>
+                </div>
+';
+
 $results = '';
 foreach ($palestras as $palestra) {
   $contVagas = $palestra->vagas;
@@ -224,7 +244,9 @@ foreach ($palestras as $palestra) {
 
             <div class="content_cardsPalestras">
 
-                <?=$results?>               
+            <?php $cards = $palestras  == 0 ? $nocards : $results;
+                    echo $cards; 
+            ?>           
                 
             </div>
         </div>

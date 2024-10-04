@@ -164,7 +164,7 @@ class Database{
         if($result->rowCount() >= 1){
             return $result;
         }else{
-            return "Palestra não encontrada!";
+            return 0;
         }
     }
 

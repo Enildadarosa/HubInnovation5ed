@@ -73,9 +73,16 @@ class Palestra{
 
         //função de filtrar usuários cadastrados nas palestras
     public static function filtrar(){
-            return (new Database('palestra'))
-            ->search_cards()
-            ->fetchAll(PDO::FETCH_CLASS,self::class);
+            $res = (new Database('palestra'))
+            ->search_cards();
+
+            if ($res == 0){
+                return 0;
+            }else{
+                return (new Database('palestra'))
+                ->search_cards()
+                ->fetchAll(PDO::FETCH_CLASS,self::class);
+            }
         }
 
             //função de filtrar usuários cadastrados nas palestras
