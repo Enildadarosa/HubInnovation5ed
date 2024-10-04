@@ -210,10 +210,11 @@ foreach ($palestras as $palestra) {
 
     </section>
 
-    <!-- <section id="textoSloganSenacHub"> 
-        <h1 class="move" animation="left">Hub Innovation: Transformando Ideias em Realidade, Impulsionando o Futuro do Comércio</h1>
-        <p class="move" animation="right">Há 5 edições, o Senac MS inspira e conecta ideias, criando soluções que impulsionam o comércio e transformam o futuro.</p>
-    </section> -->
+    <section id="textoSloganSenacHub"> 
+        
+        <!-- <h1 class="move" animation="left">Hub Innovation: Transformando Ideias em Realidade, Impulsionando o Futuro do Comércio</h1> -->
+        <!-- <p class="move" animation="right">Há 5 edições, o Senac MS inspira e conecta ideias, criando soluções que impulsionam o comércio e transformam o futuro.</p> -->
+    </section>
 
 
     <div class="area-frase">
