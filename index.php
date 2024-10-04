@@ -410,7 +410,7 @@ foreach ($palestras as $palestra) {
             <img class="imgGal imgGal3"
                 src="./images/IMG_20230621_212109_2.jpg">
             <img class="imgGal imgGal4"
-                src="./images/IMG-20230621-WA0296.jpg">
+                src="./images/IMG-20240619-WA0142.jpg">
             <img class="imgGal imgGal5"
                 src="./images/IMG-20230622-WA0009.jpg">
             <img class="imgGal imgGal6" 
@@ -446,14 +446,6 @@ foreach ($palestras as $palestra) {
             <div class="cardApoiador">
                 <img src="./svgs/wizardIcon.png">
             </div>
-            <div class="cardApoiador">
-                <img src="./svgs/wizardIcon.png">
-            </div>
-
-            <div class="cardApoiador">
-                <img src="./svgs/wizardIcon.png">
-            </div>
-
         </div>
 
         <!-- <div class="areaLogoHub5Big">
