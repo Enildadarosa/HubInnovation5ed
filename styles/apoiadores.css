@@ -117,8 +117,6 @@
     padding: 0px 30px;
 } 
 .areaCardsApoiadores{
-    
-    
     display: flex;
     width: 90%;
     max-width: 1200px;
@@ -126,19 +124,36 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
 }
-.areaCardsApoiadores .cardApoiador{
 
+.areaCardsApoiadores .cardApoiador{
     height: 300px;
     width: 300px;
     min-width: 300px;
     min-height: 300px;
-    border: 1px solid white;
+
     border-radius: 50px;
     overflow: hidden;
-
 }  
+
+.areaCardsApoiadores .cardApoiadorMaster{
+    height: 300px;
+    width: 900px;
+    min-width: 900px;
+    min-height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+}  
+
+.cardApoiadorMaster img{
+    height: 300px;
+    width: 900px;
+    min-width: 900px;
+    min-height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+}  
+
 .cardApoiador img{ 
     width: 100%;
     object-fit: cover;

@@ -439,8 +439,10 @@ foreach ($palestras as $palestra) {
 
         <div class="areaCardsApoiadores">
             
-                <img src="./svgs/logobuy.svg">
-            
+            <div class="cardApoiadorMaster">
+                <img src="./svgs/logobuy.svg">    
+            </div>
+
             <div class="cardApoiador">
                 <img src="./svgs/wizardIcon.png">
             </div>
