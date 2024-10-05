@@ -481,6 +481,9 @@ border: 3px solid rgba(38, 38, 38, 0.127);  /* creates padding around scroll thu
         height: 306px;
         width: 270px;
     }
+    .about_palestra_card h3{ 
+        margin-top: 90px; 
+    }
     .about_palestra_card h1{
         font-size: 18px;
     }

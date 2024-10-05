@@ -138,8 +138,7 @@
 
 .areaCardsApoiadores .cardApoiadorMaster{
     height: 300px;
-    width: 900px;
-    min-width: 900px;
+    width: 100%; 
     min-height: 300px;
     border-radius: 50px;
     overflow: hidden;
@@ -147,8 +146,7 @@
 
 .cardApoiadorMaster img{
     height: 300px;
-    width: 900px;
-    min-width: 900px;
+    width: 100%; 
     min-height: 300px;
     border-radius: 50px;
     overflow: hidden;

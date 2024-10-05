@@ -96,6 +96,7 @@ foreach ($palestras as $palestra) {
     <link rel="stylesheet" href="./styles/galerySenac.css">
     <link rel="stylesheet" href="./styles/apoiadores.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/sloganSenacHub.css">
     <script src="./js/main.js" defer></script>
 </head>
 
@@ -212,8 +213,38 @@ foreach ($palestras as $palestra) {
 
     <section id="textoSloganSenacHub"> 
         
-        <!-- <h1 class="move" animation="left">Hub Innovation: Transformando Ideias em Realidade, Impulsionando o Futuro do Comércio</h1> -->
-        <!-- <p class="move" animation="right">Há 5 edições, o Senac MS inspira e conecta ideias, criando soluções que impulsionam o comércio e transformam o futuro.</p> -->
+        <h1 class="move" animation="left">BEM-VINDOS AO HUB INNOVATION</h1>
+        <p class="move" animation="right">ENCONTROS QUE MULTIPLICAM CONEXÕES!!!</p>
+        <div class="areaSloganPublicSenacHub">
+
+            <div class="areaTextSlogan_P">
+                
+                <p class="textLeftSloganHub"> A INOVAÇÃO e a EDUCAÇÃO para o Senac/MS são fatores preponderantes para o crescimento e desenvolvimento sustentável de nosso Estado e País, a inovação possibilita dar concretude às ideias que criam ou melhoram processos, produtos e negócios e a Educação promove o compartilhamento de conhecimentos e desenvolvimento de skills e competências para o trabalho, ambas contribuindo para a melhoria de nossa sociedade e dos setores produtivos do Comércio de bens, Serviços e Turismo. Elas são valores perenes de nossa instituição, que busca associá-las e constantemente torná-las acessíveis e disponíveis a toda a sociedade, num processo repleto de aprendizado, crescimento e descoberta. Uma oportunidade é o HUB INNOVATION, um grande evento do Senac Hub Academy que objetiva compartilhar – Inovação e Educação – por meio de novas técnicas, protocolos, produtos, tecnologias e conhecimento nas áreas de saúde, estética, beleza, tecnologia da informação, games, gestão, varejo, comunicação e marketing, possibilitando que, gratuitamente, TODOS se conectem com as tendências e mudanças num mundo em constante transformação. BEM-VINDOS AO HUB INNOVATION – ENCONTROS QUE MULTIPLICAM CONEXÕES!!!! </p>
+                
+                <div class="areaMargenDivisoriaGala">
+                    <div class="lineGMargen"></div>
+                    <div class="middleLineGMargen">
+
+                        <div class="lineGmargenLancelot"></div>
+                        <div class="lineGmargenLancelot"></div>
+
+                    </div>
+                    <div class="lineGMargen"></div>
+
+                </div>
+
+            </div>
+            <div class="areaImgSlogan_P">
+                <img class="imgSloganImg" src="./images/imgPublicHubInnovation2.jpg" alt="">
+
+                <div class="bubbleSloganHubP bubbleSlogan_1"></div>
+                <div class="bubbleSloganHubP bubbleSlogan_2"></div>
+            </div> 
+            
+        </div>
+
+
+
     </section>
 
 
