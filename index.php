@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . '/vendor/autoload.php';
+include __DIR__.'/vendor/autoload.php';
 use App\Entity\Palestra;
 
 $new_obj = new Palestra();
@@ -86,7 +86,6 @@ foreach ($palestras as $palestra) {
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./styles/root.css">
-
     <link rel="stylesheet" href="./styles/menuTopo.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/representantesSenac.css">
@@ -219,7 +218,7 @@ foreach ($palestras as $palestra) {
 
             <div class="areaTextSlogan_P">
                 
-                <p class="textLeftSloganHub"> A INOVAÇÃO e a EDUCAÇÃO para o Senac/MS são fatores preponderantes para o crescimento e desenvolvimento sustentável de nosso Estado e País, a inovação possibilita dar concretude às ideias que criam ou melhoram processos, produtos e negócios e a Educação promove o compartilhamento de conhecimentos e desenvolvimento de skills e competências para o trabalho, ambas contribuindo para a melhoria de nossa sociedade e dos setores produtivos do Comércio de bens, Serviços e Turismo. Elas são valores perenes de nossa instituição, que busca associá-las e constantemente torná-las acessíveis e disponíveis a toda a sociedade, num processo repleto de aprendizado, crescimento e descoberta. Uma oportunidade é o HUB INNOVATION, um grande evento do Senac Hub Academy que objetiva compartilhar – Inovação e Educação – por meio de novas técnicas, protocolos, produtos, tecnologias e conhecimento nas áreas de saúde, estética, beleza, tecnologia da informação, games, gestão, varejo, comunicação e marketing, possibilitando que, gratuitamente, TODOS se conectem com as tendências e mudanças num mundo em constante transformação. BEM-VINDOS AO HUB INNOVATION – ENCONTROS QUE MULTIPLICAM CONEXÕES!!!! </p>
+                <p class="textLeftSloganHub"> A INOVAÇÃO e a EDUCAÇÃO para o Senac/MS são fatores preponderantes para o crescimento e desenvolvimento sustentável de nosso Estado e País, a inovação possibilita dar concretude às ideias que criam ou melhoram processos, produtos e negócios e a Educação promove o compartilhamento de conhecimentos e desenvolvimento de skills e competências para o trabalho, ambas contribuindo para a melhoria de nossa sociedade e dos setores produtivos do Comércio de bens, Serviços e Turismo. Elas são valores perenes de nossa instituição, que busca associá-las e constantemente torná-las acessíveis e disponíveis a toda a sociedade, num processo repleto de aprendizado, crescimento e descoberta. Uma oportunidade é o HUB INNOVATION, um grande evento do Senac Hub Academy que objetiva compartilhar – Inovação e Educação – por meio de novas técnicas, protocolos, produtos, tecnologias e conhecimento nas áreas de saúde, estética, beleza, tecnologia da informação, games, gestão, varejo, comunicação e marketing, possibilitando que, gratuitamente, TODOS se conectem com as tendências e mudanças num mundo em constante transformação.</p>
                 
                 <div class="areaMargenDivisoriaGala">
                     <div class="lineGMargen"></div>
@@ -259,18 +258,11 @@ foreach ($palestras as $palestra) {
          
  
         <div class="headerPalestras">
-
-            <!-- <div class="leftHeaderC">
-                <div class="cLefttHeader"></div>
-            </div>
-             -->
          
             <div class="titleHeadrPalestras texto" contenteditable="true">
                 <h4>PALESTRAS</h4>
             </div>
-            <!-- <div class="rightHeaderC"> 
-                <div class="cRightHeader"></div>
-            </div> -->
+
         </div>
         <div class="areaCardsPalestras" id="palestras">
 
@@ -488,13 +480,9 @@ foreach ($palestras as $palestra) {
             <div class="cardApoiador">
                 <img src="./images/landgrow.svg" id="landgrow">
             </div>
-
-
         </div>
 
     </section>
-
-
 
     <footer class="rodapeSite">
 
