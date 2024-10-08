@@ -288,7 +288,6 @@ form.addEventListener("submit",async (e) => {
     let cad = await data_php.json();
     console.log(cad);
     if(cad.status == 'success'){ 
-        alert("OLA MUNDO")
         allGreen()
         activeModal("Inscrição Realizada!",true) 
         resetCampos()

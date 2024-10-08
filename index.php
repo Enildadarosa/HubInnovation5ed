@@ -108,7 +108,7 @@ foreach ($palestras as $palestra) {
             <img class="img_logo" src="./svgs/hublogo5.svg">
         </div>
         <ul class="links_topo">
-            <li class="itemsTopo"><a href="#home_section">Home</a></li>
+            <li class="itemsTopo"><a href="./index.php">Home</a></li>
             <li class="itemsTopo"><a href="#palestras">Palestras</a></li>
             <li class="itemsTopo"><a href="#sobreHubs">Sobre</a></li>
         </ul>
@@ -213,7 +213,7 @@ foreach ($palestras as $palestra) {
 
     <section id="textoSloganSenacHub"> 
         
-        <h1 class="move" animation="left">BEM-VINDOS AO HUB INNOVATION</h1>
+        <h1 class="move" animation="left">SENAC APRESENTA A 5ª EDIÇÃO DO HUB INNOVATION</h1>
         <p class="move" animation="right">ENCONTROS QUE MULTIPLICAM CONEXÕES!!!</p>
         <div class="areaSloganPublicSenacHub">
 
@@ -272,7 +272,7 @@ foreach ($palestras as $palestra) {
                 <div class="cRightHeader"></div>
             </div> -->
         </div>
-        <div class="areaCardsPalestras">
+        <div class="areaCardsPalestras" id="palestras">
 
             <div class="content_cardsPalestras">
 
@@ -355,8 +355,7 @@ foreach ($palestras as $palestra) {
         </div>
 
         <div class="areaRealizao">
-                <img src="./images/logohubneg.png">
-                <img src="./images/logofecoms.png" id="fe-com">
+                <img id="biglogo" src="./images/logo_hub_senac.png">
                 <img src="./images/logofabrica.png">
            
         </div>
@@ -469,22 +468,29 @@ foreach ($palestras as $palestra) {
         </div>
 
         <div class="areaCardsApoiadores">
-            
-            <div class="cardApoiadorMaster">
-                <img src="./svgs/logobuy.svg">    
-            </div>
 
-            <!-- <div class="cardApoiador">
-                <img src="./svgs/wizardIcon.png">
+        
+        <div class="cardApoiador">
+                <img src="./images/buy.png">
             </div>
             <div class="cardApoiador">
-                <img src="./svgs/wizardIcon.png">
-            </div> -->
-        </div>
+                <img src="./images/logo_eco.png">
+            </div>
+            <div class="cardApoiador">
+                <img src="./images/comex.svg">
+            </div>
+            <div class="cardApoiador">
+                <img src="./images/ipia_ms.png">
+            </div>
+            <div class="cardApoiador">
+                <img src="./images/digix.svg">
+            </div>
+            <div class="cardApoiador">
+                <img src="./images/landgrow.svg" id="landgrow">
+            </div>
 
-        <!-- <div class="areaLogoHub5Big">
-            <img src="../SVG SITE HUB 5/Logo e Elementos/SVG/Ativo 1.svg">
-        </div> -->
+
+        </div>
 
     </section>
 
@@ -496,9 +502,8 @@ foreach ($palestras as $palestra) {
             © 2024 FÁBRICA DE SOFTWARE
         </div>
         <div class="iconsFooter">
-            <a href="#" class="move" animation="top"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" class="move" animation="top"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="move" animation="top"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/senachubacademy" class="move" animation="top"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://web.facebook.com/senachubacademy" class="move" animation="top"><i class="fa-brands fa-facebook"></i></a>
         </div>
 
     </footer>

@@ -8,7 +8,11 @@
 }
 
 .areaRealizao img{
-    width: 23%;
+    width: 25%;
+}
+
+#biglogo{
+    width: 50%;
 }
 .areaRealizao #fe-com{
     width: 45%;
@@ -117,44 +121,32 @@
     padding: 0px 30px;
 } 
 .areaCardsApoiadores{
+    
+    
     display: flex;
     width: 90%;
     max-width: 1200px;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    
 }
-
 .areaCardsApoiadores .cardApoiador{
-    height: 300px;
+
+    height: 210px;
     width: 300px;
-    min-width: 300px;
-    min-height: 300px;
-
-    border-radius: 50px;
+    /* min-width: 300px; */
+    /* min-height: 200px; */
+    display: flex;
+    align-items: center;
     overflow: hidden;
-}  
 
-.areaCardsApoiadores .cardApoiadorMaster{
-    height: 300px;
-    width: 100%; 
-    min-height: 300px;
-    border-radius: 50px;
-    overflow: hidden;
 }  
-
-.cardApoiadorMaster img{
-    height: 300px;
-    width: 100%; 
-    min-height: 300px;
-    border-radius: 50px;
-    overflow: hidden;
-}  
-
 .cardApoiador img{ 
     width: 100%;
     object-fit: cover;
+    max-height: 210px;
 } 
 .areaLogoHub5Big{
 

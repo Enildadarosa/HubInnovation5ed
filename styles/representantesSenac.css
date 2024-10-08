@@ -225,11 +225,11 @@
 }
 #textoSloganSenacHub h1{
     letter-spacing: 10px;
-    font-size: 50px;    
+    font-size: 80px;    
     text-align: center;
     width: 90%;
     font-family: "Bebas Neue", sans-serif;
-    color: var(--yellow1);
+    color: white;
 }
 
 #textoSloganSenacHub p{
@@ -237,7 +237,7 @@
     text-align: center;
     width: 70%;
     color: var(--orange1);
-    font-size: 30px;  
+    font-size: 60px;  
     margin-top: 20px;
 }
 
