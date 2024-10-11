@@ -261,6 +261,12 @@
     font-weight: 900;
     font-style: normal;
 }
+@media (max-width:500px) {
+    .marcaDaguaSpan{ 
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.164);  
+    }
+    
+}
 
 .palavras-flutuantes{
     display: flex;

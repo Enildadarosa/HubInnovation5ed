@@ -123,3 +123,12 @@ section{
   
   
   /* ======================= */
+  @media (max-width: 500px) { 
+    :root{
+        --move_low: 20px;
+        --move_low_reverse: -20px; 
+    }   
+    
+
+    
+  }
