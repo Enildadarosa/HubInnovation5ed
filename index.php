@@ -1,7 +1,7 @@
 <?php
 include __DIR__.'/vendor/autoload.php';
 use App\Entity\Palestra;
-
+//Trabalhando na branch 18
 $new_obj = new Palestra();
 $palestras = $new_obj->filtrar();
 
